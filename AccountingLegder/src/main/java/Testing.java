@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Main {
+public class Testing {
 
     private static final Scanner scanner = new Scanner(System.in);
     private static final ledgerManagement ledgerManager = new ledgerManagement();
