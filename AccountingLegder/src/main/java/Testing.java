@@ -1,10 +1,18 @@
 import java.util.Scanner;
 
 
-public class Testing {
+import java.util.Scanner;
 
-    private static final Scanner scanner = new Scanner(System.in);
-    private static final ledgerManagement ledgerManager = new ledgerManagement();
+public class Testing {
+    //print hoome screen
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ledgerManagement ledgerManagement = new ledgerManagement();
+        reportManagement reportManagement   =  new reportManagement();
+
+
+    }
+
 
     public static void main(String[] args) {
         while(true) {
@@ -14,6 +22,14 @@ public class Testing {
             System.out.println("L) Ledger");
             System.out.println("X) Exit");
             System.out.println("Select and Option: ");
+            String choice = scanner.nextLine().toUpperCase();
+
+            switch (choice) {
+                case "D":
+                    ledgerManager.addDeposit();
+                    break;
+
+
     }
 
         }
