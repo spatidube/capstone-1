@@ -8,10 +8,14 @@ This is a simple **Accounting Ledger System** designed to manage financial trans
 1. **Add Deposits and Payments**
    - Add **deposits** (money added to the account) and **payments** (money spent or deducted from the account).
    - Each transaction includes details such as **date**, **time**, **description**, **vendor**, and **amount**.
+   ![image](https://github.com/user-attachments/assets/60a7cff1-c59e-4e28-a6f2-9feb4bc0f197)
+
 
 2. **Manage the Ledger**
    - View all transactions in the **ledger**.
-   - Filter transactions based on type (Deposits, Payments) or specific periods (Month to Date, Previous Month, Year to Date, Previous Year).
+   - Filter transactions based on type (Deposits, Payments) or specific periods (Month to Date, Previous Month, Year to Date, Previous Year).![image]![image]
+
+
 
 3. **Generate Reports**
    - Generate **reports** that summarize transactions in specific periods.
@@ -20,6 +24,8 @@ This is a simple **Accounting Ledger System** designed to manage financial trans
      - **Year to Date (YTD)**
      - **Previous Year**
      - **Search by Vendor**
+
+
 
 4. **Data Persistence**
    - All transactions are saved in a **CSV file** (`transaction.csv`), which allows transactions to persist between program runs.
@@ -31,20 +37,23 @@ This is a simple **Accounting Ledger System** designed to manage financial trans
 1. **`Testing.java`**
    - This is the **entry point** of the program. It displays a main menu for the user to select different actions such as adding deposits, making payments, viewing the ledger, and generating reports.
    - It handles user input and calls appropriate functions to process commands.
+![image](https://github.com/user-attachments/assets/7a168e46-06e6-4890-9305-8080804a68ef)
 
 2. **`LedgerManagement.java`**
    - Manages **adding deposits** and **making payments**.
    - Handles the **ledger** (list of all transactions).
    - Reads and writes transactions to the `transaction.csv` file.
+(https://github.com/user-attachments/assets/7085d985-d8e0-44a5-ab80-258d4715d7d3)
 
 3. **`ReportManagement.java`**
    - Handles **generating reports** for different periods like "Month to Date", "Previous Year", etc.
    - Filters transactions by vendor or type (deposit vs. payment).
    - Sorts transactions by date and time.
-
+![image](https://github.com/user-attachments/assets/b7a53dbe-ff78-484b-bfa3-38cc8edb23fa)
 4. **`Transaction.java`**
    - Represents a **transaction** with attributes like **date**, **time**, **description**, **vendor**, and **amount**.
    - Provides methods to **convert transactions to/from CSV format** and **display the transaction** in a human-readable format.
+![image](https://github.com/user-attachments/assets/b18ef098-6b6e-42f4-89b2-0a9ad8ed6931)
 
 ## **How It Works**
 
