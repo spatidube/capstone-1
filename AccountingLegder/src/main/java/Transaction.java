@@ -1,25 +1,40 @@
+// IMPORORTS
 import java.time.LocalDate;
+import java.time.LocalTime;
+
+//CLASS DECLARATION
 public class Transaction {
-    private String date;
-    private String time;
+
+    // INSTANCE VARIABLES
+    private LocalDate date;
+    private LocalTime time;
     private String description;
     private String vendor;
-    private String amount;
+    private double amount;
+
+    //CONSTRUCTOR
+    public Transaction(LocalDate date, LocalTime time, String description, String vendor, double amount) {
+        this.date = date;
+        this.time = time;
+        this.description = description;
+        this.vendor = vendor;
+        this.amount = amount;
+    }
 
     //Getters and Setters baby! right click and generate it
-    public String getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
-    public String getTime() {
+    public LocalTime getTime() {
         return time;
     }
 
-    public void setTime(String time) {
+    public void setTime(LocalTime time) {
         this.time = time;
     }
 
@@ -39,21 +54,42 @@ public class Transaction {
         this.vendor = vendor;
     }
 
-    public String getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
+    //CONVERT CSV lint to a transaction
+    public static Transaction fromCSV(String line) {
 
-    public Transaction (String date, String time, String description, String vendor, String amount) {
+        // i want to split each part of data with a pipe (delimiter)
+        String[] choice = line.split("\\|");
 
+        //parse + assign each value from the array
+        String dateText = choice[0];
+        String timeText = choice[1];
+        String description = choice[2];
+        String vendor = choice[3];
+        String amountText = (choice[4]);
+
+        //Convert strings to correct data types
+        LocalDate date = LocalDate.parse(dateText);
+        LocalTime time = LocalTime.parse(timeText);
+        double amount = Double.parseDouble(amountText);
+
+//return this transaction obect with parsed data
+        return new Transaction(date, time, description, vendor,amount);
     }
+        //Convert Transaction to CSV LINE
+        public String toCSV() {
+            return date + "|" + time + "|" + description + "|" + vendor + "|" + amount;
+        }
+// to now display on the screen with parameters we need to set them
+    public String toString() {
+        return String.format("%s %s | %-20s | %-15s | $%8.2f", date, time, description, vendor,amount);
 
-    public String toCSV() {
-
-        return date + "|" + time + "|" + description + "|" +  vendor + "|" + amount;
     }
 }
 
