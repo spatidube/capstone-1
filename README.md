@@ -117,16 +117,3 @@ Feel free to fork the repository, create pull requests, or submit issues for bug
 ## **License**
 
 This project is open-source and available under the MIT License.
-
-`````
-
----
-
-### Key Points:
-- **Bold text** is used for headings and important terms to make the document easier to scan.
-- **Code blocks** (enclosed with triple backticks ````) are used for commands, file formats, and other technical details.
-- Links like GitHub repository URLs can be embedded easily.
-- **Lists** (unordered and ordered) are used to break down features, instructions, and methods clearly.
-
-While this format doesn’t add inline colors, the Markdown styling should help your README stand out in GitHub. If you want to add more styling options (like colors or icons), you’d have to use external resources (like badges or images) or work with GitHub Pages for advanced design.
-`````
