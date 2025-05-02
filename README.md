@@ -8,7 +8,6 @@ This is a simple **Accounting Ledger System** designed to manage financial trans
 1. **Add Deposits and Payments**
    - Add **deposits** (money added to the account) and **payments** (money spent or deducted from the account).
    - Each transaction includes details such as **date**, **time**, **description**, **vendor**, and **amount**.
-   ![image](https://github.com/user-attachments/assets/60a7cff1-c59e-4e28-a6f2-9feb4bc0f197)
 
 
 2. **Manage the Ledger**
