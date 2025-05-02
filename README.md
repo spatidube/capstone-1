@@ -1,8 +1,4 @@
-GitHub README files don't directly support colors, but you can use various Markdown formatting options to make the document visually appealing. Below is an example of how you can format the README file with sections, headings, bullet points, and code blocks. While GitHub doesn't support inline colors, you can use **bold**, *italic*, and other formatting styles to emphasize key information.
 
-Here’s a GitHub-friendly version of your README with proper Markdown formatting:
-
-````markdown
 # **Accounting Ledger System**
 
 This is a simple **Accounting Ledger System** designed to manage financial transactions such as deposits and payments. The system allows you to add, view, and generate reports based on your transactions. All transaction data is stored in a CSV file, which can be loaded and saved as you interact with the system.
